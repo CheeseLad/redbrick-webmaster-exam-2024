@@ -82,7 +82,7 @@
 </head>
 <body>
     <h2>Order Form</h2>
-    <img src="{% static 'img\grey.png' %}" id="hoodie-img" alt="Hoodie" width="100px">
+    <img src="http://127.0.0.1:8002/staticfiles/imggrey.png" id="hoodie-img" alt="Hoodie" width="100px">
     <form id="orderForm" action="#" method="post" onsubmit="return validateForm()">
         <div>
             <label for="username">Redbrick Username:</label>
@@ -122,15 +122,15 @@
             var hoodieImg = document.getElementById("hoodie-img");
 
             if (affiliationSelect.value === "Redbrick") {
-                hoodieImg.src = "{% static 'img\red.png' %}"; // Change to the actual image path for Redbrick hoodie
+                hoodieImg.src = "http://127.0.0.1:8002/staticfiles/img/red.png"; // Change to the actual image path for Redbrick hoodie
                 hoodieImg.alt = "Redbrick Hoodie";
                 hoodieImg.width = 100;
             } else if (affiliationSelect.value === "Blueblock") {
-                hoodieImg.src = "{% static 'img\blue.png' %}"; // Change to the actual image path for Blueblock hoodie
+                hoodieImg.src = "http://127.0.0.1:8002/staticfiles/img/blue.png"; // Change to the actual image path for Blueblock hoodie
                 hoodieImg.alt = "Blueblock Hoodie";
                 hoodieImg.width = 100;
             } else {
-                hoodieImg.src = "{% static 'img\grey.png' %}"; // No image shown if no affiliation selected
+                hoodieImg.src = "http://127.0.0.1:8002/staticfiles/img/grey.png"; // No image shown if no affiliation selected
                 hoodieImg.alt = "Hoodie";
                 hoodieImg.width = 100;
             }
