@@ -83,12 +83,17 @@ Layered System
 
 ```
 The HTTP Authorization request header can be used to provide credentials that authenticate a user agent with a server, allowing access to a protected resource.
+
+Bearer Token: Allows a client to authenticate using a token.
+Basic Authentication: Allows a client to authenticate using a username and password.
 ```
 
 10. Describe HTTPS (HTTP Secure) communication and the main advantage over HTTP.
 
 ```
+HTTPS is HTTP with encryption and verification. 
 
+The main advantage is HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 ```
 
 11. How does browser caching work, and why is it important?
@@ -140,8 +145,13 @@ Jamstack, an acronym for JavaScript, APIs, and Markup, represents a modern web d
 17. What is a Static Site Generator (SSG)? List *two* popular SSGs in the Jamstack ecosystem and give reasons for their popularity.
 
 ```
-Hugo
-11ty - redbrick website
+Static site generators are engines that use text input files (such as Markdown and AsciiDoc) to generate static web pages, producing relevant HTML, CSS, and JavaScript.
+
+Two Popular SSGs:
+
+Hugo: Written in Go and is known for its speed and flexibility.
+
+11ty: Allows developers to use various templating languages and data formats to generate static websites.
 ```
 
 18. How is data integrated in Jamstack web applications, during both run-time and build-time, from data sources such as Content Management Systems (CMS) and third-party APIs?
