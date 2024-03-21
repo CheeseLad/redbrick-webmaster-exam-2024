@@ -184,9 +184,11 @@ cd site
 npm install -g vite
 npm install vite --save-dev
 
-Site: http://127.0.0.1:8000/
+Order Frontend Site: http://127.0.0.1:8000/
 API Hoodie List: http://127.0.0.1:8001/api/hoodie/
-Static Files: http://127.0.0
+Single Hoodie: http://127.0.0.1:8001/api/hoodie/1/
+Order Hoodie Post Area: http://127.0.0.1:8001/hoodies/
+Static Files Example: http://127.0.0.1:8002/staticfiles/img/blue.png
 
 >[!INFO] This practical is technology-agnostic, so you have freedom to choose frameworks and the tech stack. This will assess not only your expertise with web technologies but also your choice of software architecture for the requirements. An excellent practical satisfies the steps below, while going beyond what is required to create a simple project with solid UI, maintainability, security and performance.
 

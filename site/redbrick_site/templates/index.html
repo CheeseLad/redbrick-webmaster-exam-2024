@@ -176,8 +176,22 @@
     const jsonData = {};
     formData.forEach((value, key) => { jsonData[key] = value; });
 
+    
+let orderId;
+for (const key in jsonData) {
+    if (key === 'username') {
+        orderId = jsonData[key];
+        break;
+    }
+}
+console.log(orderId);
+
+    if (validateForm()) {
+
+    
+
     // Send POST request to backend API
-    fetch('http://127.0.0.1:8001/api/hoodies/', { // Change the URL to your backend API URL
+    fetch('http://127.0.0.1:8001/hoodies/', { // Change the URL to your backend API URL
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -193,13 +207,18 @@
     .then(data => {
         // Handle success response
         console.log(data);
-        // Redirect or display a success message to the user
+        // script1.js
+        //var dataToPass = { order_id: data.order_id };
+        localStorage.setItem('order_id', orderId);
+
+        window.location.href = "{% url 'confirm' %}";
     })
     .catch(error => {
         // Handle error
         console.error('There was a problem with your fetch operation:', error);
         // Display an error message to the user
     });
+    }
 });
 </script>
 </body>
