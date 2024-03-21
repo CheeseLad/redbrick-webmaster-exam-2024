@@ -23,7 +23,8 @@ DJANGO1_PID=$!
 python3 ./api/manage.py runserver 127.0.0.1:8001 &
 DJANGO2_PID=$!
 
-vite --config ./site/vite.config.js &
+cd site
+vite --config vite.config.js &
 VITE_PID=$!
 
 wait
