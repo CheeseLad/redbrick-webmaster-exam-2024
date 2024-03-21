@@ -15,7 +15,7 @@
 1. State a method of horizontally centering a  `<div>` HTML element with CSS.
 
 ```
-
+Add margin: auto; and width: 50%; to the div element's CSS.
 ```
 
 2. What is the key difference between the `<div>` and `<span>` HTML elements?
@@ -35,13 +35,19 @@ The sizes attribute informs the browser about the intended display size of the i
 4. What do the terms SEO and ARIA mean, in relation to the web? What are the semantic HTML elements, and how do they relate to SEO and ARIA?
 
 ```
+SEO: Search Engine Optimisation. SEO means the process of improving your website to increase its visibility in Google, Microsoft Bing, Yahoo, and other search engines.
 
+ARIA: Accessible Rich Internet Applications. It consists of markup that can be added to HTML in order to communicate the roles, states, and properties of user interface elements to assistive technologies.
+
+Semantic HTML elements help you create a clear and logical layout for your web pages, making them easier to be understood by screen readers for ARIA and search engines for SEO.
 ```
 
 5. What are events in JavaScript, and how does event bubbling work? How is event bubbling utilised in event delegation?
 
 ```
+An event is an action that occurs as per the user's instruction as input and gives the output in response. Examples include clicking a button, hovering over an element, or submitting a form.
 
+Event bubbling happens when an element receives an event, and that event is transmitted to its parent and ancestor elements in the DOM tree until it gets to the root element.
 ```
 
 6. What are Web Components? Briefly describe the *three* main technologies which compose the Web Component specification.
@@ -53,19 +59,30 @@ Web components are a set of web platform APIs that allow you to create new custo
 7. List the *four* CRUD operations and the respective HTTP method for each.
 
 ```
-
+Create - POST
+Read - GET
+Update - PUT
+Delete - DELETE
 ```
 
 8. What does REST stand for, and what are the key principles of a RESTful API?
 
 ```
+REST stands for Representational State Transfer.
 
+Key Principles:
+
+Uniform Interface
+Stateless
+Cacheable
+Client-Server Design Pattern
+Layered System
 ```
 
 9. Explain the `Authorization` HTTP header and *two* valid schemes that can be used.
 
 ```
-
+The HTTP Authorization request header can be used to provide credentials that authenticate a user agent with a server, allowing access to a protected resource.
 ```
 
 10. Describe HTTPS (HTTP Secure) communication and the main advantage over HTTP.
