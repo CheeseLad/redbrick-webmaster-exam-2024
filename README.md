@@ -133,7 +133,7 @@ Browserify is an open-source Javascript bundler that allows you to bundle Node.j
 15. Compare and contrast Single Page Applications (SPAs) and Multi-Page Applications (MPAs), including their definitions, key characteristics, and use-cases.
 
 ```
-
+Single Page Applications (SPAs) are web applications that load a single HTML page and dynamically update that page as the user interacts with it, typically using JavaScript frameworks like React or Angular. They offer a seamless, app-like experience with faster transitions between pages. Multi-Page Applications (MPAs), on the other hand, consist of multiple HTML pages, each serving distinct content. While MPAs are simpler to develop and maintain, SPAs are more suitable for complex, interactive web applications requiring real-time updates and smooth transitions between views.
 ```
 
 16. Describe the Jamstack software architecture, its benefits, and its main differences from traditional server-driven architectures.
@@ -157,7 +157,7 @@ Hugo: Written in Go and is known for its speed and flexibility.
 18. How is data integrated in Jamstack web applications, during both run-time and build-time, from data sources such as Content Management Systems (CMS) and third-party APIs?
 
 ```
-
+During build-time, data is fetched from sources like Content Management Systems and third-party APIs and pre-rendered into static assets. This approach optimizes performance by reducing server load and ensuring faster page loads for users. Additionally, run-time integration enables dynamic content updates and interactions through client-side JavaScript fetching data from APIs as needed.
 ```
 
 19. What is Server-Side Rendering (SSR) and Hydration, and when would they be used in Jamstack web applications?
@@ -189,6 +189,7 @@ API Hoodie List: http://127.0.0.1:8001/api/hoodie/
 Single Hoodie: http://127.0.0.1:8001/api/hoodie/1/
 Order Hoodie Post Area: http://127.0.0.1:8001/hoodies/
 Static Files Example: http://127.0.0.1:8002/staticfiles/img/blue.png
+```
 
 >[!INFO] This practical is technology-agnostic, so you have freedom to choose frameworks and the tech stack. This will assess not only your expertise with web technologies but also your choice of software architecture for the requirements. An excellent practical satisfies the steps below, while going beyond what is required to create a simple project with solid UI, maintainability, security and performance.
 
