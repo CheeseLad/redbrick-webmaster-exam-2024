@@ -3,3 +3,5 @@ migrations/
 __pycache__/
 __init__.py
 node_modules/
+.venv/
+venv/
